@@ -6,6 +6,11 @@ angular.module('canalapp').controller('MapCtrl', ['$scope', '$compile', '$q', 'c
 			var htmlContent = '<div class="info" style="width:auto;">'+
 				'<span ng-click="showAbout()"><img src="about.png" style="padding-right:7px;cursor:pointer;"></span>'+
 				'<a href="http://veniceprojectcenter.org"><img src="vpc25logo.png"></a>'+
+        '<ul style="margin-top:5px;margin-bottom:0px;">'+
+        '<li><a href="http://canals.veniceprojectcenter.org/hydro">Canal Hydrodynamics App</a></li>'+
+        '<li><a href="http://canals.veniceprojectcenter.org/maintenance">Canal Maintenance App</a></li>'+
+        '<li><a href="http://bridges.veniceprojectcenter.org">Bridge Height App</a></li>'+
+        '</ul>'+
 				'</div>';
 			$scope.compiled = $compile(htmlContent)($scope);
 			this._content = $scope.compiled[0];
